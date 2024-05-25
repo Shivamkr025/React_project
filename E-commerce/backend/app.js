@@ -1,16 +1,18 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const cookieParser = require('cookie-parser')
-const file = require('./src/router/userRouter')
+const userRouter = require('./src/router/userRouter')
+const productRouter =  require('./src/router/productRouter')
 require('dotenv').config()
 
-const PORT = process.env.PORT
+const PORT = process.env.PORT 
 const app = express()
 
 
 app.use(express.json())
 app.use(cookieParser());
-app.use('/', file)
+app.use('/', userRouter)
+app.use('/' , productRouter)
 
 
 
