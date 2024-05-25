@@ -1,4 +1,3 @@
-const Joi = require('joi');
 
 class Validator {
     static validate(schema) {
