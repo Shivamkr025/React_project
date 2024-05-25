@@ -16,7 +16,7 @@ const userSignup = async (req, res) => {
         await submit.save()
         console.log(submit);
 
-        res.status(201).json({ message: "create account successfully" })
+        res.status(201).json({ message: "create account successfully" , submit})
     } catch (error) {
         console.log(error);
         res.status(500).json({ error: "something went wrong in user signup function " })
