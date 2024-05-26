@@ -1,4 +1,4 @@
-const { products, products } = require('../model/allModels')
+const { products } = require('../model/allModels')
 
 const productsView = async (req, res) => {
     try {
@@ -15,7 +15,7 @@ const productsView = async (req, res) => {
 }
 
 const productAdd = async (req, res) => {
-    const { productId, productName, description, category, newPrice, oldPrice } = req.body
+    const { productId, productName, description, category, newPrice, oldPrice , quantity } = req.body
     try {
         const findProduct = await products.findOne({ productId })
         if (findProduct) {
@@ -26,7 +26,7 @@ const productAdd = async (req, res) => {
         const imageUrl = req.file ? req.file.filename : null;
         const newProduct = new products({
             productId, productName, description, category, newPrice, oldPrice,
-            imageUrl
+            quantity , imageUrl
         });
 
 
@@ -39,29 +39,30 @@ const productAdd = async (req, res) => {
 }
 
 const productUpdate = async (req, res) => {
-
-    const { productId } = req.body
+    const { productId } = req.body;
 
     try {
-        const findData = await products.findOne({ productId })
+        const findData = await products.findOne({ productId });
         if (!findData) {
             return res.status(404).json({ message: "Product not found" });
         }
 
-        const getData = { ...req.body, imageUrl: req.file.filename }
-        const submit = await products.findByIdAndUpdate({ productId }, { $set: getData }, { new: true })
-        res.status(200).json(submit)
+        const getData = req.file ? { ...req.body, imageUrl: req.file.filename } : { ...req.body };
+
+        const submit = await products.findByIdAndUpdate(findData._id, { $set: getData }, { new: true });
+        res.status(200).json(submit);
 
     } catch (error) {
         console.error(error);
-        res.status(500).json({ message: "Something went wrong in update product function" })
+        res.status(500).json({ message: "Something went wrong in update product function" });
     }
 }
 
-const productDelete = async(req , res) =>{
+
+const productDelete = async (req, res) => {
     const { productId } = req.body;
     try {
-        const product = await products.findByIdAndDelete({productId});
+        const product = await products.findOneAndDelete({ productId });
         if (!product) {
             return res.status(404).json({ message: "Product not found" });
         }
@@ -74,13 +75,13 @@ const productDelete = async(req , res) =>{
 
 const searchProducts = async (req, res) => {
     try {
-        const products = await products.find({
+        const product = await products.find({
             $or: [
                 { productName: { $regex: req.params.key} },
                 { category: { $regex: req.params.key } }
             ]
         });
-        res.status(200).json(products);
+        res.status(200).json(product);
     } catch (error) {
         console.error(error);
         res.status(500).json({ message: "Something went wrong in search products function" });

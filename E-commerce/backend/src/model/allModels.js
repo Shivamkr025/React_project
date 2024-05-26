@@ -11,8 +11,10 @@ const productSchema = new mongoose.Schema({
     productId: String,
     productName: String,
     description: String,
+    category: String,
     newPrice: Number,
     oldPrice: Number,
+    quantity: Number,
     imageUrl: String
 })
 
