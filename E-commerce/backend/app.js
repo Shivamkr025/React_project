@@ -1,14 +1,19 @@
-const express = require('express')
-const mongoose = require('mongoose')
-const cookieParser = require('cookie-parser')
-const userRouter = require('./src/router/userRouter')
-const productRouter =  require('./src/router/productRouter')
-require('dotenv').config()
+import express from 'express';
+import mongoose from 'mongoose';
+import cors from 'cors';
+import cookieParser from 'cookie-parser';
+import dotenv from 'dotenv';
+import userRouter from './routes/userRouter.js';
+import productRouter from './routes/productRouter.js';
 
-const PORT = process.env.PORT 
+dotenv.config();
+
+
+const PORT = process.env.PORT || 9000
 const app = express()
 
 
+app.use(cors());
 app.use(express.json())
 app.use(cookieParser());
 app.use('/', userRouter)

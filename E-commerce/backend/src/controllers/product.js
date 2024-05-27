@@ -1,4 +1,4 @@
-const { products } = require('../model/allModels')
+import {products} from '../model/allModels'
 
 const productsView = async (req, res) => {
     try {
@@ -88,4 +88,4 @@ const searchProducts = async (req, res) => {
     }
 };
 
-module.exports = {productsView , productAdd , productUpdate , productDelete , searchProducts}
+export default {productsView , productAdd , productUpdate , productDelete , searchProducts}

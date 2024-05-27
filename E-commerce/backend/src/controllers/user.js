@@ -1,6 +1,6 @@
-const { users } = require('../model/allModels')
-const { createToken } = require('../middleware/auth')
-const bcrypt = require('bcrypt')
+import {users} from '../model/allModels'
+import {createToken} from '../middleware/auth'
+import bcrypt from 'bcrypt'
 const salt = 10
 
 const userSignup = async (req, res) => {
@@ -109,4 +109,4 @@ const deleteUser = async (req, res) => {
 
 
 
-module.exports = { userSignup, userLogin, allUser, updateUser , deleteUser}
+export default { userSignup, userLogin, allUser, updateUser , deleteUser}

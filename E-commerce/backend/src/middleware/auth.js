@@ -1,6 +1,6 @@
-const {users} = require('../model/allModels')
-const jwt = require('jsonwebtoken')
-require('dotenv').config()
+import jwt from 'jsonwebtoken'
+import dotenv from 'dotenv'
+dotenv.config()
 
 const createToken = (email) => {
     return jwt.sign({ email }, process.env.secretKey, { expiresIn: '1h' })
@@ -23,4 +23,4 @@ const verifyToken = async (req, res, next) => {
     }
 }
 
-module.exports = {createToken , verifyToken}
+export default {createToken , verifyToken}

@@ -1,20 +1,15 @@
-const express = require('express')
-const Users = require('../controllers/user')
-const { signupSchema } = require('../middleware/validation')
-const validator = require('../middleware/validator')
-const { verifyToken } = require('../middleware/auth')
+import express from 'express';
+import { userSignup, userLogin, allUser, updateUser, deleteUser } from '../controllers/user.js';
+import { signupSchema } from '../middleware/validation.js';
+import validator from '../middleware/validator.js';
+import { verifyToken } from '../middleware/auth.js';
 
-const router = express.Router()
+const router = express.Router();
 
-router.post('/api/users/signup', validator.validate(signupSchema), Users.userSignup)
+router.post('/api/users/signup', validator.validate(signupSchema), userSignup);
+router.post('/api/users/login', userLogin);
+router.get('/api/users/view', verifyToken, allUser);
+router.put('/api/users/update', verifyToken, updateUser);
+router.delete('/api/user/delete', verifyToken, deleteUser);
 
-router.post('/api/users/login', Users.userLogin)
-
-router.get('/api/users/view', verifyToken, Users.allUser)
-
-router.put('/api/users/update', verifyToken, Users.updateUser)
-
-router.delete('/api/user/delete', verifyToken, Users.deleteUser)
-
-module.exports = router
-
+export default router;
