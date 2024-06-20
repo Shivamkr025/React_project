@@ -1,18 +1,18 @@
 import express from 'express';
-import product from '../controllers/product.js'
-import { upload } from '../middleware/multer.js';
-
+import {productsView , productAdd , productUpdate , productDelete , searchProducts} from '../controllers/product.js'
+// import  upload  from '../middleware/multer.js';
+// , upload.single('imageUrl') 
 
 const router = express.Router()
 
-router.get('/api/product/view' , product.productsView)
+router.get('/api/product/view' ,productsView)
 
-router.post('/api/product/add' , upload.single('imageUrl') , product.productAdd)
+router.post('/api/product/add' , productAdd)
 
-router.put('/api/product/update' , upload.single('imageUrl') , product.productUpdate)
+router.put('/api/product/update'  , productUpdate)
 
-router.delete('/api/product/delete' , product.productDelete)
+router.delete('/api/product/delete' ,productDelete)
 
-router.get('/api/product/search/:key' , product.searchProducts)
+router.get('/api/product/search/:key' ,searchProducts)
 
 export default router

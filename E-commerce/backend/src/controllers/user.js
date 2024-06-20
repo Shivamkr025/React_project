@@ -1,5 +1,5 @@
-import {users} from '../model/allModels'
-import {createToken} from '../middleware/auth'
+import {users} from '../model/allModels.js'
+import {createToken} from '../middleware/auth.js'
 import bcrypt from 'bcrypt'
 const salt = 10
 
@@ -10,6 +10,7 @@ const userSignup = async (req, res) => {
         if (userData) {
             return res.status(400).json({ error: "user already create account " })
         }
+        
 
         const passwordHash = await bcrypt.hash(password, salt)
         const submit = new users({ ...req.body, password: passwordHash })
@@ -109,4 +110,4 @@ const deleteUser = async (req, res) => {
 
 
 
-export default { userSignup, userLogin, allUser, updateUser , deleteUser}
+export { userSignup, userLogin, allUser, updateUser , deleteUser}

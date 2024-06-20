@@ -1,5 +1,4 @@
-import {products} from '../model/allModels'
-
+import { products } from "../model/allModels.js"
 const productsView = async (req, res) => {
     try {
         const viewItem = await products.find()
@@ -15,7 +14,7 @@ const productsView = async (req, res) => {
 }
 
 const productAdd = async (req, res) => {
-    const { productId, productName, description, category, newPrice, oldPrice , quantity } = req.body
+    const { productId, productName, description, category, newPrice, oldPrice , quantity ,imageUrl} = req.body
     try {
         const findProduct = await products.findOne({ productId })
         if (findProduct) {
@@ -23,7 +22,7 @@ const productAdd = async (req, res) => {
         }
 
 
-        const imageUrl = req.file ? req.file.filename : null;
+        // const imageUrl = req.file ? req.file.filename : null;
         const newProduct = new products({
             productId, productName, description, category, newPrice, oldPrice,
             quantity , imageUrl
@@ -88,4 +87,5 @@ const searchProducts = async (req, res) => {
     }
 };
 
-export default {productsView , productAdd , productUpdate , productDelete , searchProducts}
+export {productsView , productAdd , productUpdate , productDelete , searchProducts}
+

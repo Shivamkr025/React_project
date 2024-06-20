@@ -11,5 +11,4 @@ router.post('/api/users/login', userLogin);
 router.get('/api/users/view', verifyToken, allUser);
 router.put('/api/users/update', verifyToken, updateUser);
 router.delete('/api/user/delete', verifyToken, deleteUser);
-
 export default router;
