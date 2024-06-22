@@ -1,0 +1,9 @@
+#main-Container{
+    background-image: url('../../assets/carousel-1.jpg');
+    background-size: cover;
+}
+
+#main-Container::before{
+    background: rgba(0, 0, 255, 0.5);
+    z-index: 1;
+}
