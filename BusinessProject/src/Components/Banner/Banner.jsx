@@ -1,6 +1,6 @@
 import React from 'react'
 import './Banner.css'
-import "bootstrap/dist/css/bootstrap.min.css";
+
 
 function Banner() {
 

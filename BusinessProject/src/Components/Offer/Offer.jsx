@@ -6,9 +6,9 @@ function Offer() {
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
             <h1 className='h-tag'>What We Offer</h1>
             <main className="container mt-4">
-                <div className="row justify-content-center" style={{ display: "flex", alignItems: "center", textAlign: "center" }}>
+                <div className="row justify-content-center " style={{ display: "flex", alignItems: "center", textAlign: "center" }}>
                     <div className="col-lg-4 col-md-6 mb-4">
-                        <div className="card custom-card p-3" style={{ display: "flex", alignItems: "center", textAlign: "center", backgroundColor: '#fffef9' }}>
+                        <div className="card custom-card p-3 main-container" style={{ display: "flex", alignItems: "center", textAlign: "center"}}>
                             <div className='RoundLogos'>
                             <i class="fa-solid fa-user-tie"></i>
                             </div>
@@ -18,8 +18,8 @@ function Offer() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-6 mb-4">
-                        <div className="card custom-card p-3" style={{ display: "flex", alignItems: "center", textAlign: "center", backgroundColor: '#fffef9' }}>
+                    <div className="col-lg-4 col-md-6 mb-4 ">
+                        <div className="card custom-card p-3 main-container" style={{ display: "flex", alignItems: "center", textAlign: "center"}}>
                             <div className='RoundLogos'>
                                 <i class="fa-solid fa-chart-pie" ></i>
                             </div>
@@ -29,8 +29,8 @@ function Offer() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-6 mb-4">
-                        <div className="card custom-card p-3" style={{ display: "flex", alignItems: "center", textAlign: "center", backgroundColor: '#fffef9' }}>
+                    <div className="col-lg-4 col-md-6 mb-4 ">
+                        <div className="card custom-card p-3 main-container" style={{ display: "flex", alignItems: "center", textAlign: "center" }}>
                             <div className='RoundLogos'>
                                 <i className="fa-solid fa-chart-line" ></i>
                             </div>
@@ -40,8 +40,8 @@ function Offer() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-6 mb-4">
-                        <div className="card custom-card p-3" style={{ display: "flex", alignItems: "center", textAlign: "center", backgroundColor: '#fffef9' }}>
+                    <div className="col-lg-4 col-md-6 mb-4 ">
+                        <div className="card custom-card p-3 main-container" style={{ display: "flex", alignItems: "center", textAlign: "center" }}>
                             <div className='RoundLogos'>
                                 
                                 <i class="fa-solid fa-chart-area"></i>
@@ -52,8 +52,8 @@ function Offer() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-6 mb-4">
-                        <div className="card custom-card p-3" style={{ display: "flex", alignItems: "center", textAlign: "center", backgroundColor: '#fffef9' }}>
+                    <div className="col-lg-4 col-md-6 mb-4 ">
+                        <div className="card custom-card p-3 main-container" style={{ display: "flex", alignItems: "center", textAlign: "center" }}>
                             <div className='RoundLogos'>                                
                                 <i className="fa-solid fa-scale-balanced" ></i>
                             </div>
@@ -63,8 +63,8 @@ function Offer() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-6 mb-4">
-                        <div className="card custom-card p-3" style={{ display: "flex", alignItems: "center", textAlign: "center", backgroundColor: '#fffef9' }}>
+                    <div className="col-lg-4 col-md-6 mb-4 ">
+                        <div className="card custom-card p-3 main-container" style={{ display: "flex", alignItems: "center", textAlign: "center" }}>
                             <div className='RoundLogos'>
                                 <i class="fa-solid fa-house-crack"></i>
                             </div>

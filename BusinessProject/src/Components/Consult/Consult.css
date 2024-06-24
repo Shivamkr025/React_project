@@ -1,4 +1,3 @@
-
 .first_about {
     display: flex;
     flex-wrap: wrap;
@@ -13,21 +12,17 @@
 .about_wrapper {
     flex: 1 1 300px;
     max-width: 50%;
-}
-
-.about_image {
-    max-width: 100%;
-    border-radius: 8px;
-    transition: transform 0.2s ease-in-out;
+    background-color: rgb(239, 236, 236);
+    height: 57vh;
+    padding: 20px;
 }
 
 .profile_first {
     max-width: 100%;
     display: flex;
-    background-color: #e91e1eaf; 
+    background-color: #e91e1eaf;
     padding: 10px;
 }
-
 
 .image_profile {
     display: flex;
@@ -38,6 +33,20 @@
     border-radius: 50%;
     margin: 1rem;
     background-color: white;
+    
+}
+
+.long-content {
+    margin-top: 6%;
+}
+
+.small-content {
+    margin-top: 3.5%;
+    font-weight: 600;
+}
+
+.h1 {
+    margin-top: 2%;
 }
 
 
@@ -58,11 +67,13 @@
 .para {
     color: rgba(255, 255, 255, 0.849);
 }
+
 .h2 {
     color: rgb(3, 3, 74);
 }
+
 .btns_pr1 button {
-    background-color: #e53935; 
+    background-color: #e53935;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -74,7 +85,7 @@
 }
 
 .btns_pr1 button:hover {
-    background-color: #d94a35; 
+    background-color: #d94a35;
 }
 
 .about_ {
@@ -82,27 +93,30 @@
     max-width: 50%;
 }
 
-
-
 .about_ h2 {
     font-size: 1.8rem;
-    margin-bottom: 15px;
+}
+
+.h1 {
+    font-weight: 600;
+}
+
+.consult{
+    font-weight: 600;
 }
 
 .about_ p {
     font-size: 1rem;
     line-height: 1.6;
-    margin-bottom: 15px;
+    margin-bottom: -12px;
 }
 
-
 .consult {
-    color: #d94a35 ;
-
+    color: #d94a35;
 }
 
 .small-content {
-    color: #d94a35 ;
+    color: #d94a35;
 }
 
 .long-Content {
@@ -110,21 +124,18 @@
     color: rgba(12, 11, 11, 0.614);
 }
 
-
 @media (max-width: 768px) {
     .first_about {
         flex-direction: column;
         align-items: center;
     }
 
-    .about_ {
-        .h2 {
-            font-size: 21px;
-        }
-        .para {
-            font-size: 12px;
+    .about_ .h2 {
+        font-size: 21px;
+    }
 
-        }
+    .about_ .para {
+        font-size: 12px;
     }
 
     .about_wrapper,

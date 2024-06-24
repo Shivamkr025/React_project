@@ -21,7 +21,7 @@ function App() {
       <Result/>
       <ConsultMain/>
       <OurTeam/>
-      <OurClient/>
+      <OurClient/>  
       <BlogPost/>
       <Footer/>
     </>

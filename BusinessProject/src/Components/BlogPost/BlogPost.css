@@ -1,5 +1,45 @@
-.icon-date{
-    background: rgb(225, 42, 42);
-    width: 50px;
+
+.icon-date {
+    background: #e12a2a;
+    width: 70px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.latest-blogs .card-title {
+    font-weight: bold;
+    font-size: 1.1rem;  
+}
+
+.card-body {
+    margin: 0;
+    padding: 0;
+}
+
+.latest-blogs .card-body p {
+    font-size: 0.85rem;
+    color: #555;
+}
+
+.latest-blogs .card {
+    transition: transform 0.3s, box-shadow 0.2s;
+}
+
+.latest-blogs .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.latest-blogs .admin-info {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.admin-info {
+    margin-top: 4px;
 }
