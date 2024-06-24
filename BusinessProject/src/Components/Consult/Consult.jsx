@@ -3,48 +3,51 @@ import './Consult.css'; // Import your CSS file
 
 function Consult() {
     return (
-        <div className="container">
-            <div className="row">
-                <div className="col-md-6 position-relative d-flex flex-column">
-                    <h1 className="mb-4">Welcome to Consult</h1>
-                    <div className="icon-circle position-absolute top-0 end-0 translate-middle">
-                    </div>
-                    <p className="mb-4">Dim dolor diam ipsum sit. Clita erat ipsum et lorem stet lorem duo justo magna dolore</p>
-                    <p className="mb-4">Et stet ipsum nonumy rebum eos justo, accusam invidunt aliquyam stet magna at et sanctus vero sea sit amet dolores sit dolor duo invidunt dolor, kasd rebum consetetur diam invidunt erat. Accusam nonumy lorem kasd eirmod. Justo clita sadipscing ea invidunt rebum sadipscing consetetur. Amet diam amet amet sanctus sanctus invidunt erat ipsum eirmod.</p>
-                    <button className="btn btn-primary">Get A Quote</button>
+        <div className="first_about">
+            <div className="about_wrapper">
+                <h1>Welcome To <span className='consult'>Consult</span></h1>
+                <div className="btns_pr1">
+                    <h6 className='small-content'>
+                        Diam dolor diam ipsum sit. Clita erat ipsum et lorem stet no lorem sit clita duo justo magna dolore
+                    </h6>
+                    <h6 className='long-content'>
+                        Et stet ipsum nonumy rebum eos justo, accusam invidunt aliquyam stet magna at et sanctus, vero sea sit amet dolores, sit dolor duo invidunt dolor, kasd rebum consetetur diam invidunt erat stet. Accusam nonumy lorem kasd eirmod. Justo clita sadipscing ea invidunt rebum sadipscing consetetur. Amet dlam amet amet sanctus sanctus invidunt erat ipsum eirmod.
+                    </h6>
+                    <button style={{ borderRadius: "50px" }}>
+                        Get a quote
+                    </button>
                 </div>
-                <div className="col-md-6">
-                    <div className="d-flex flex-column mb-4" style={{ backgroundColor: 'red' }}>
-                        <a href="#" className="d-flex align-items-center text-decoration-none text-dark mb-3 position-relative">
-                            <div className="icon-circle bg-white d-flex align-items-center justify-content-center">
-                                <i className="fa-solid fa-user-tie"></i>
-                            </div>
-                            <div className="ms-2">
-                                <h2 className="mb-1 text-primary">Business</h2>
-                                <p className="mb-0 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                        </a>
-                        <a href="#" className="d-flex align-items-center text-decoration-none text-dark mb-3 position-relative">
-                            <div className="icon-circle bg-white d-flex align-items-center justify-content-center">
-                                <i className="fa-solid fa-chart-line"></i>
-                            </div>
-                            <div className="ms-2">
-                                <h2 className="mb-1 text-primary">Financial Analysis</h2>
-                                <p className="mb-0 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                        </a>
-                        <a href="#" className="d-flex align-items-center text-decoration-none text-dark position-relative">
-                            <div className="icon-circle bg-white d-flex align-items-center justify-content-center">
-                                <i className="fa-solid fa-scale-balanced"></i>
-                            </div>
-                            <div className="ms-2">
-                                <h2 className="mb-1 text-primary">Legal Advisory</h2>
-                                <p className="mb-0 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                        </a>
+            </div>
+            <div className="about_">
+                <div className='profile_first'>
+                    <div className='image_profile d-flex justify-content-center align-items-center p-3 p-md-0'>
+                        <i className="fa-solid fa-user-tie" style={{ color: 'red', fontSize: "1.5rem" }}></i>
+                    </div>
+                    <div className='profile_text'>
+                        <h2 className='h2'>Business Planning</h2>
+                        <p className='para'>Tempor erat elitr rebum at clita. Díam dolor ipsum amet eos erat ipsum lorem et sit sed stet lorem sit clita duo</p>
+                    </div>
+                </div>
+                <div className='profile_first'>
+                    <div className='image_profile d-flex justify-content-center align-items-center p-3 p-md-0'>
+                        <i className="fa-solid fa-chart-line" style={{ color: 'red', fontSize: "1.5rem" }}></i>
+                    </div>
+                    <div className='profile_text'>
+                        <h2 className='h2'>Market Analysis</h2>
+                        <p className='para'>Tempor erat elitr rebum at clita. Díam dolor ipsum amet eos erat ipsum lorem et sit sed stet lorem sit clita duo</p>
+                    </div>
+                </div>
+                <div className='profile_first'>
+                    <div className='image_profile d-flex justify-content-center align-items-center p-3 p-md-0'>
+                        <i className="fa-solid fa-scale-balanced" style={{ color: 'red', fontSize: "1.5rem" }}></i>
+                    </div>
+                    <div className='profile_text'>
+                        <h2 className='h2'>Legal Advisory</h2>
+                        <p className='para'>Tempor erat elitr rebum at clita. Díam dolor ipsum amet eos erat ipsum lorem et sit sed stet lorem sit clita duo</p>
                     </div>
                 </div>
             </div>
+
         </div>
     );
 }

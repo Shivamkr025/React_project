@@ -1,0 +1,29 @@
+.RoundLogos {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.h-tag{
+    font-weight: 600;
+}
+
+i{
+   color: white;
+}
+
+.RoundLogos{
+    background-color: rgb(209, 59, 59);
+}
