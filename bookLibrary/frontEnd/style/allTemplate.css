@@ -1,0 +1,494 @@
+body{
+    padding: 0%;
+    margin: 0%;
+}
+.main-container{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://img.freepik.com/free-photo/flat-lay-composition-with-colorful-educational-supplies-blue-background_169016-37580.jpg?size=626&ext=jpg&ga=GA1.1.515670896.1702655650&semt=ais');
+    background-size: cover;
+    display: flex;
+    align-items:center ;
+   
+}
+.form-plate{
+    height: 91vh;
+    width: 28vw;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 10%;   
+}
+
+.form-plate input {
+    height: 7%;
+    width: 80%;
+    font-size: larger;
+    margin: 3%;
+    margin-left: 10%;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+
+}
+.form-plate #signupBtn{
+    height: 7%;
+    width: 80%;
+    font-size: larger;
+    margin: 3%;
+    margin-left: 10%;
+    background-color: rgb(3, 169, 234);
+    border: none;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.form-plate h1{
+    text-align: center;
+}
+
+/* login style start here ... */
+.login-main-container{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://img.freepik.com/free-photo/flat-lay-composition-with-colorful-educational-supplies-blue-background_169016-37580.jpg?size=626&ext=jpg&ga=GA1.1.515670896.1702655650&semt=ais');
+    background-size: cover;
+    display: flex;
+    align-items:center ;
+}
+.login-container{
+    height: 85vh;
+    width: 28vw;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 10%; 
+}
+.login-container input{
+    height: 7%;
+    width: 80%;
+    font-size: larger;
+    margin: 5%;
+    margin-left: 10%;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.login-container #loginBtn{
+    height: 7%;
+    width: 80%;
+    font-size: larger;
+    margin: 5%;
+    margin-left: 10%;
+    background-color: rgb(3, 169, 234);
+    border: none;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.login-container h1,h2{
+    text-align: center;
+}
+
+
+/* here started add member list */
+
+.addMember-main{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://img.freepik.com/free-photo/flat-lay-composition-with-colorful-educational-supplies-blue-background_169016-37580.jpg?size=626&ext=jpg&ga=GA1.1.515670896.1702655650&semt=ais');
+    background-size: cover;
+    display: flex;
+    align-items:center ;
+}
+.add-member{
+    height: 85vh;
+    width: 28vw;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 10%; 
+}
+.add-member input{
+    height: 7%;
+    width: 80%;
+    font-size: larger;
+    margin: 4%;
+    margin-left: 10%;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.add-member #memberBtn{
+    height: 7%;
+    width: 80%;
+    font-size: larger;
+    margin-left: 10%;
+    background-color: rgb(3, 169, 234);
+    border: none;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.add-member h1,h2{
+    text-align: center;
+}
+
+
+/* list of member style is here  */
+.listMember-mainContainer{
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    background-image: url('https://img.freepik.com/free-photo/flat-lay-composition-with-colorful-educational-supplies-blue-background_169016-37580.jpg?size=626&ext=jpg&ga=GA1.1.515670896.1702655650&semt=ais');
+
+}
+.listMember-container{
+    height: 90vh;
+    width: 30vw;
+    background-color: rgb(210, 197, 197);
+    border-radius: 10px;
+    overflow: auto;
+    
+  
+}
+#listBtn{
+    height: 2rem;
+    width: 6rem ;
+    border: none;
+    background-color: rgb(0, 183, 255);
+    margin-left: 80%;
+}
+
+#member-detail{
+    height: 20%;
+    width: 100%;
+    font-size: large;
+    color: green;
+    margin-left: 5%;
+    text-decoration: underline;
+    border-bottom: 2px solid black;
+    
+}
+
+/* here started Update member style  */
+
+
+.updateMember-mainContainer{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://img.freepik.com/free-photo/flat-lay-composition-with-colorful-educational-supplies-blue-background_169016-37580.jpg?size=626&ext=jpg&ga=GA1.1.515670896.1702655650&semt=ais');
+    background-size: cover;
+    display: flex;
+    align-items:center ;
+}
+.updateMember{
+    height: 85vh;
+    width: 28vw;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 10%; 
+}
+.updateMember input{
+    height: 7%;
+    width: 80%;
+    font-size: larger;
+    margin: 4%;
+    margin-left: 10%;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.updateMember .updateMemberBtn{
+    height: 7%;
+    width: 80%;
+    font-size: larger;
+    margin-left: 10%;
+    background-color: rgb(3, 169, 234);
+    border: none;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.updateMember h1,h3{
+    text-align: center;
+}
+
+/* here write remove member style */
+
+
+
+.mainContainer-removeMember{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://img.freepik.com/free-photo/flat-lay-composition-with-colorful-educational-supplies-blue-background_169016-37580.jpg?size=626&ext=jpg&ga=GA1.1.515670896.1702655650&semt=ais');
+    background-size: cover;
+    display: flex;
+    align-items:center ;
+}
+.removeMember{
+    height: 85vh;
+    width: 28vw;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 10%; 
+}
+.removeMember input{
+    height: 7%;
+    width: 80%;
+    font-size: larger;
+    margin: 4%;
+    margin-left: 10%;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.removeMember .removeMemberBtn{
+    height: 7%;
+    width: 80%;
+    font-size: larger;
+    margin-left: 10%;
+    background-color: rgb(3, 169, 234);
+    border: none;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.removeMember h1,h3{
+    text-align: center;
+}
+
+
+/* list all book style is here  */
+
+.allBook-mainContainer{
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    background-image: url('https://img.freepik.com/free-photo/flat-lay-composition-with-colorful-educational-supplies-blue-background_169016-37580.jpg?size=626&ext=jpg&ga=GA1.1.515670896.1702655650&semt=ais');
+
+}
+.allBook-secContainer{
+    height: 90vh;
+    width: 30vw;
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px;
+    overflow: auto;
+}
+
+#allBooks{
+    height: 50%;
+    width: 100%;
+    font-size: large;
+    color: blue;
+    text-decoration: underline;
+    border-bottom: 2px solid black;
+    
+}
+.allBookbtn{
+    height: 2rem;
+    width: 6rem ;
+    border: none;
+    background-color: rgb(0, 183, 255);
+    margin-left: 80%;
+    box-shadow: 10px rgb(255, 255, 255);
+}
+
+
+/* here i started style add book  */
+
+.addBook-mainContainer{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://img.freepik.com/free-photo/flat-lay-composition-with-colorful-educational-supplies-blue-background_169016-37580.jpg?size=626&ext=jpg&ga=GA1.1.515670896.1702655650&semt=ais');
+    background-size: cover;
+    display: flex;
+    align-items:center ;
+}
+.addBook-secContainer{
+    height: 85vh;
+    width: 28vw;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 10%; 
+}
+.addBook-secContainer input{
+    height: 7%;
+    width: 80%;
+    font-size: larger;
+    margin: 3%;
+    margin-left: 10%;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.addBook-secContainer #addBookbtn{
+    height: 7%;
+    width: 80%;
+    font-size: larger;
+    margin-left: 10%;
+    background-color: rgb(3, 169, 234);
+    border: none;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.addBook-secContainer h1,h2{
+    text-align: center;
+}
+
+/* here i'm doing styling remove book  */
+
+
+.removeBook-mainContainer{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://img.freepik.com/free-photo/flat-lay-composition-with-colorful-educational-supplies-blue-background_169016-37580.jpg?size=626&ext=jpg&ga=GA1.1.515670896.1702655650&semt=ais');
+    background-size: cover;
+    display: flex;
+    align-items:center ;
+}
+.removeBook-secContainer{
+    height: 85vh;
+    width: 28vw;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 10%; 
+}
+.removeBook-secContainer input{
+    height: 7%;
+    width: 80%;
+    font-size: larger;
+    margin: 3%;
+    margin-left: 10%;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.removeBook-secContainer #removeBookbtn{
+    height: 7%;
+    width: 80%;
+    font-size: larger;
+    margin-left: 10%;
+    background-color: rgb(3, 169, 234);
+    border: none;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.removeBook-secContainer h1,h2{
+    text-align: center;
+}
+
+
+/* here styling update book */
+
+.updateBook-mainContainer{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://img.freepik.com/free-photo/flat-lay-composition-with-colorful-educational-supplies-blue-background_169016-37580.jpg?size=626&ext=jpg&ga=GA1.1.515670896.1702655650&semt=ais');
+    background-size: cover;
+    display: flex;
+    align-items:center ;
+}
+.updateBook-secContainer{
+    height: 85vh;
+    width: 28vw;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 10%; 
+}
+.updateBook-secContainer input{
+    height: 7%;
+    width: 80%;
+    font-size: larger;
+    margin: 3%;
+    margin-left: 10%;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.updateBook-secContainer #updateBookbtn{
+    height: 7%;
+    width: 80%;
+    font-size: larger;
+    margin-left: 10%;
+    background-color: rgb(3, 169, 234);
+    border: none;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.updateBook-secContainer h1,h2{
+    text-align: center;
+}
+
+
+/* here styling issue book */
+
+.issueBook-mainContainer{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://img.freepik.com/free-photo/flat-lay-composition-with-colorful-educational-supplies-blue-background_169016-37580.jpg?size=626&ext=jpg&ga=GA1.1.515670896.1702655650&semt=ais');
+    background-size: cover;
+    display: flex;
+    align-items:center ;
+}
+.issueBook-secContainer{
+    height: 85vh;
+    width: 28vw;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 10%; 
+}
+.issueBook-secContainer input{
+    height: 7%;
+    width: 80%;
+    font-size: larger;
+    margin: 3%;
+    margin-left: 10%;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.issueBook-secContainer #issueBookbtn{
+    height: 7%;
+    width: 80%;
+    font-size: larger;
+    margin-left: 10%;
+    background-color: rgb(3, 169, 234);
+    border: none;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.issueBook-secContainer h1,h2{
+    text-align: center;
+}
+
+
+/* here style return issue book */
+
+
+.returnBook-mainContainer{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://img.freepik.com/free-photo/flat-lay-composition-with-colorful-educational-supplies-blue-background_169016-37580.jpg?size=626&ext=jpg&ga=GA1.1.515670896.1702655650&semt=ais');
+    background-size: cover;
+    display: flex;
+    align-items:center ;
+}
+.returnBook-secContainer{
+    height: 85vh;
+    width: 28vw;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 10%; 
+}
+.returnBook-secContainer input{
+    height: 7%;
+    width: 80%;
+    font-size: larger;
+    margin: 3%;
+    margin-left: 10%;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.returnBook-secContainer #returnBookbtn{
+    height: 7%;
+    width: 80%;
+    font-size: larger;
+    margin-left: 10%;
+    background-color: rgb(3, 169, 234);
+    border: none;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.returnBook-secContainer h1,h2{
+    text-align: center;
+}
